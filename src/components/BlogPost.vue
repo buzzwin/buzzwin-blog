@@ -21,7 +21,7 @@
       <footer class="post__footer">
         <vue-disqus
           v-if="commentsReady"
-          shortname="Buzzwin"
+          shortname="buzzwin"
           :key="post"
           :identifier="post"
           :url="`https://buzzwin.com/read/${post}`"
