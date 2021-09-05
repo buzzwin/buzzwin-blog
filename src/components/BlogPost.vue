@@ -16,7 +16,7 @@
       <section class="post__body rte" v-html="content"></section>
 
       <footer class="post__footer">
-        <vue-disqus v-if="commentsReady" shortname="buzzwin"
+        <vue-disqus v-if="commentsReady" shortname="http-buzzwin-com"
           :key="post" :identifier="post" :url="`https://buzzwin.com/read/${post}`"/>
       </footer>
     </article>
@@ -28,7 +28,7 @@ import VueDisqus from 'vue-disqus/VueDisqus'
 import { kebabify, prettyDate } from '../helpers'
 
 export default {
-  name: 'blog-post',
+  name: ' ',
   resource: 'BlogPost',
   components: { VueDisqus },
   props: { post: String },
