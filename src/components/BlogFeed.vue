@@ -79,6 +79,7 @@ export default {
       return { backgroundImage: `url(${src})` }
     },
     stackPosts(posts) {
+      this.$gtag.event('buzzwin', { method: 'buzzwin' })
       let interval
       const stack = () => {
         this.posts.push(posts.shift())
