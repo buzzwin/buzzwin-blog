@@ -1,6 +1,8 @@
 import './startup'
 
 import Vue from 'vue'
+import VueGtag from "vue-gtag";
+
 import App from './App'
 import router from './router'
 import * as resources from './resources'
@@ -23,6 +25,10 @@ Vue.use(deviceQueries, {
   desktop: 'min-width: 1280px',
   monitor: 'min-width: 1448px'
 })
+
+Vue.use(VueGtag, {
+  config: { id: "G-VFJPPK7F58" }
+});
 
 new Vue({
   router,
