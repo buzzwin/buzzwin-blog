@@ -1,7 +1,7 @@
 import './startup'
 
 import Vue from 'vue'
-import VueGtag from "vue-gtag";
+import VueGtag from 'vue-gtag';
 
 import App from './App'
 import router from './router'
@@ -27,7 +27,7 @@ Vue.use(deviceQueries, {
 })
 
 Vue.use(VueGtag, {
-  config: { id: "G-VFJPPK7F58" }
+  config: { id: 'G-VFJPPK7F58' }
 });
 
 new Vue({
