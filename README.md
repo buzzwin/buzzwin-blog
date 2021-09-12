@@ -39,7 +39,7 @@ Now go to Netlify Site Settings and then go to the `Build and Deploy` page. Scro
     COSMIC_BUCKET: "", /* Default: 'simple-vue-blog' */
     COSMIC_READ_KEY: "", /* Default: ' */
     COSMIC_WRITE_KEY: "", /* Default: '' */
-    BLOG_TITLE: "", /* Default: 'Vue Blog Cosmic JS' */
+    BLOG_TITLE: "", /* Default: 'Buzzwin' */
 }
 ```
 

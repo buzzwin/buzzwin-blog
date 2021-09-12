@@ -9,6 +9,7 @@ import * as resources from './resources'
 import resource from './plugins/resource'
 import deviceQueries from './plugins/device-queries'
 import config from './config'
+import Ads from 'vue-google-adsense'
 
 Vue.config.productionTip = false
 
@@ -29,6 +30,10 @@ Vue.use(deviceQueries, {
 Vue.use(VueGtag, {
   config: { id: 'G-VFJPPK7F58' }
 });
+
+Vue.use(require('vue-script2'))
+
+Vue.use(Ads.Adsense)
 
 new Vue({
   router,
