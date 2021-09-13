@@ -18,6 +18,8 @@
     }
   }
 
+  
+
   @media (--monitor) {
     padding: 7.5rem 0 6.5vw;
 
@@ -129,5 +131,19 @@
         font-weight: 400;
       }
     }
+  }
+  .btn {
+    padding:15px 20px;
+    display:inline-block;
+    border-radius:3px;
+    background:rgb(250, 235, 235);
+    font-size:16px;
+    color:#333;
+  }
+  
+  .btn-large {
+    padding:20px 30px;
+    font-size:22px;
+    @extend .btn;
   }
 }

@@ -9,10 +9,11 @@
           <span class="post__sep"></span>
           <time>{{ prettyDate(published) }}</time>
         </h3>
-
+         <a class = "btn" :href=destination>Watch it on {{ network_name}}</a>
         <blockquote class="post__subtitle">{{ description }}</blockquote>
       </header>
-
+     
+  
       <section class="post__body rte" v-html="content"></section>
 
       <footer class="post__footer">
@@ -40,6 +41,8 @@ export default {
       content: '',
       published: '',
       description: '',
+      destination: '',
+      network_name: '',
       commentsReady: false
     }
   },
