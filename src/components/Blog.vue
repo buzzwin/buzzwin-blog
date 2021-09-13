@@ -1,5 +1,6 @@
 <template>
   <main class="blog" :class="{ 'blog--reading': this.post }">
+    <ad/>
     <blog-title :blog-name="title" :filters="filters" />
     <blog-nav :content="content" :filters="filters" :navs="navs"/>
     <blog-feed :filters="filters"/>
@@ -14,11 +15,11 @@ import BlogNav from './BlogNav'
 import BlogFeed from './BlogFeed'
 import BlogPost from './BlogPost'
 import BlogFooter from './BlogFooter'
-import Ad from './Ad'
+import Ad from './Ad.vue'
 
 export default {
   name: 'blog',
-  components: { BlogTitle, Ad, BlogNav, BlogFeed, BlogPost, BlogFooter },
+  components: { BlogTitle, BlogNav, BlogFeed, BlogPost, BlogFooter, Ad },
   resource: 'Blog',
   props: {
     post: String,

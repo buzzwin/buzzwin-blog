@@ -86,4 +86,48 @@
       }
     }
   }
+  &__ad {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5rem;
+
+    @media (--tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media (--laptop) {
+      justify-content: flex-start;
+    }
+
+    @media (--desktop) {
+      padding: 0 6.25rem;
+    }
+
+    @media (--monitor) {
+      padding: 0 2.5rem;
+    }
+
+    .signature {
+      display: inline-block;
+      width: 15rem;
+      text-align: center;
+
+      @media (--tablet) {
+        width: 18rem;
+      }
+    }
+    .cosmicjs {
+      color: #ADB6C0;
+      text-transform: capitalize;
+      a {
+        color: #2A3744;
+        font-weight: 400;
+      }
+    }
+  }
 }
