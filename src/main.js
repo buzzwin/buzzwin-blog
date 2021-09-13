@@ -10,6 +10,7 @@ import resource from './plugins/resource'
 import deviceQueries from './plugins/device-queries'
 import config from './config'
 import Ads from 'vue-google-adsense'
+import Vuetify from 'vuetify'
 
 Vue.config.productionTip = false
 
@@ -34,6 +35,8 @@ Vue.use(VueGtag, {
 Vue.use(require('vue-script2'))
 
 Vue.use(Ads.Adsense)
+
+Vue.use(Vuetify)
 
 new Vue({
   router,
