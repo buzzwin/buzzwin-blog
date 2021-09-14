@@ -3,6 +3,9 @@
     <h1 class="nav__title">
       <router-link to="/">{{ content.title }}</router-link>
     </h1>
+     <h4 class="blog_footer">
+     What will you watch next ?
+    </h4>
 
     <transition-group tag="menu" name="nav__item" class="nav__menu">
       <li v-for="label in labels" class="nav__item" :key="label" @click="navBack">
