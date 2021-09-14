@@ -9,12 +9,10 @@
               @click.native="scrollTo(0, 220, scrollDelay)">
               {{ post.title }}
             </router-link>
-
             <div class="preview__meta">
               <time class="preview__published">
                 {{ prettyDate(post.published) }}
               </time>
-
               <router-link class="preview__author"
                 :to="`/by/${kebabify(post.author)}`"
                 @click.native="scrollTo(0, 220, scrollDelay)">
@@ -79,7 +77,6 @@ export default {
       return { backgroundImage: `url(${src})` }
     },
     stackPosts(posts) {
-      this.$gtag.event('buzzwin', { method: 'buzzwin' })
       let interval
       const stack = () => {
         this.posts.push(posts.shift())
@@ -89,7 +86,6 @@ export default {
           clearInterval(interval)
         }
       }
-
       interval = setInterval(stack, 125)
     }
   },
