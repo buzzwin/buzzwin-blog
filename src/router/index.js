@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Blog from '../components'
+import Blog from '../components/'
+import MovieSearch from '../components/tmdb/'
 
 Vue.use(Router)
 
@@ -21,5 +22,9 @@ export default new Router({
     name: 'post',
     props: true,
     component: Blog
+  }, {
+    path: '/search',
+    name: 'search',
+    component: MovieSearch
   }]
 })

@@ -13,7 +13,6 @@
         <blockquote class="post__subtitle">{{ description }}</blockquote>
       </header>
      
-  
       <section class="post__body rte" v-html="content"></section>
 
       <footer class="post__footer">
