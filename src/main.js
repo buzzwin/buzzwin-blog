@@ -8,6 +8,7 @@ import resource from './plugins/resource'
 import deviceQueries from './plugins/device-queries'
 import config from './config'
 import Vuetify from 'vuetify'
+import VueGtag from 'vue-gtag';
 
 Vue.config.productionTip = false
 
@@ -15,6 +16,10 @@ Vue.use(resource, {
   resources,
   endpoint: 'https://api.cosmicjs.com/v1/' + config.COSMIC_BUCKET
 })
+
+Vue.use(VueGtag, {
+  config: { id: 'G-VFJPPK7F58' }
+});
 
 Vue.use(deviceQueries, {
   phone: 'max-width: 567px',
