@@ -54,7 +54,6 @@ export default {
       if (to !== from) this.navs++
     }
   },
-
   beforeMount() {
     this.$getResource('blog')
   }

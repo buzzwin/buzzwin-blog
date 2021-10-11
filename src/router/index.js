@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Blog from '../components/'
 import MovieSearch from '../components/tmdb/'
+import Movies from '../components/tmdb/Movies'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
     name: 'post',
     props: true,
     component: Blog
+  }, {
+    path: '/movies',
+    name: 'movies',
+    component: Movies
   }, {
     path: '/search',
     name: 'search',
